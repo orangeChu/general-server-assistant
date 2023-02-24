@@ -2,7 +2,7 @@ FROM gstant/base
 
 RUN useradd -ms /bin/bash gstant
 WORKDIR  /home/gstant
-RUN git clone --depth=1 https://github.com/gsetant/general-server-assistant/
+RUN git clone --depth=1 https://github.com/orangeChu/general-server-assistant.git
 WORKDIR  /home/gstant/general-server-assistant/front-end
 RUN npm install 
 RUN npm run build:prod
