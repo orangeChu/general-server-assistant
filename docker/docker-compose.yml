@@ -1,7 +1,7 @@
 version: '3'
 services:
   gstant:
-    image: gstant/general-server-assistant:latest
+    build: .
     container_name: general-server-assistant
     restart: always
     ports:
